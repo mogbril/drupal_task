@@ -1,0 +1,29 @@
+langcode: en
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.node.teaser
+    - field.field.node.product.field_product_brand
+    - field.field.node.product.field_product_category
+    - field.field.node.product.field_product_image
+    - field.field.node.product.field_product_price
+    - node.type.product
+  module:
+    - user
+id: node.product.teaser
+targetEntityType: node
+bundle: product
+mode: teaser
+content:
+  links:
+    weight: 100
+    settings: {  }
+    third_party_settings: {  }
+    region: content
+hidden:
+  field_product_brand: true
+  field_product_category: true
+  field_product_image: true
+  field_product_price: true
+  langcode: true
+  search_api_excerpt: true

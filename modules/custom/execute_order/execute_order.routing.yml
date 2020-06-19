@@ -1,0 +1,8 @@
+execute_order.push:
+    path: '/ajax/execute_order'
+    defaults:
+        _controller: '\Drupal\execute_order\Controller\Order::execute'
+        _title: ''
+    requirements:
+        _permission: 'access content'
+

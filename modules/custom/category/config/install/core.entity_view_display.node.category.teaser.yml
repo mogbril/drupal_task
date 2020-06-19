@@ -1,0 +1,25 @@
+langcode: en
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.node.teaser
+    - field.field.node.category.field_cat_description
+    - field.field.node.category.field_category_image
+    - node.type.category
+  module:
+    - user
+id: node.category.teaser
+targetEntityType: node
+bundle: category
+mode: teaser
+content:
+  links:
+    weight: 100
+    settings: {  }
+    third_party_settings: {  }
+    region: content
+hidden:
+  field_cat_description: true
+  field_category_image: true
+  langcode: true
+  search_api_excerpt: true

@@ -1,0 +1,19 @@
+<?php
+
+/**
+ * Implements hook_theme().
+ */
+function products_list_theme($existing, $type, $theme, $path) {
+    return [
+        'products_list' => [
+            'variables' => ['products' => NULL, 'logged_in'=> NULL],
+        ],
+    ];
+}
+
+/**
+ * Implements hook_preprocess_html().
+ */
+function products_list_preprocess_html(&$variables) {
+    $variables['page']['#attached']['library'][] = 'products_list/products_list';
+}

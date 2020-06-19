@@ -1,0 +1,5 @@
+name: 'Product Module'
+description: 'Creates "Product" content type.'
+package: Custom
+type: module
+core: 8.x

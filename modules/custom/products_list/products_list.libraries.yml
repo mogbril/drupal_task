@@ -1,0 +1,9 @@
+products_list:
+  version: 1.x
+  js:
+    assets/js/products_list.js: {}
+  dependencies:
+    - core/jquery
+  css:
+    component:
+      assets/css/products_list.css: {}

@@ -1,0 +1,29 @@
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.node.orders.field_orders_product
+    - node.type.orders
+  module:
+    - user
+id: node.orders.default
+targetEntityType: node
+bundle: orders
+mode: default
+content:
+  field_orders_product:
+    weight: 101
+    label: above
+    settings:
+      link: true
+    third_party_settings: {  }
+    type: entity_reference_label
+    region: content
+  links:
+    weight: 100
+    settings: {  }
+    third_party_settings: {  }
+    region: content
+hidden:
+  langcode: true
+  search_api_excerpt: true
